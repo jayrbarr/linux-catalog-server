@@ -16,7 +16,7 @@
 - Downloaded Putty. Configured server and key for login to SSH and port 2200.
 
 # Dokku Installation Script (on server instance creation at Amazon Lightsail)
-'''
+...
 wget https://raw.githubusercontent.com/dokku/dokku/v0.10.5/bootstrap.sh;
 sudo DOKKU_TAG=v0.10.5 bash bootstrap.sh
-'''
+...

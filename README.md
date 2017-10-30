@@ -100,7 +100,11 @@ mkdir .ssh
 nano .ssh/authorized_keys
 ```
 Paste public key into new file and save.
-
+Change folder and file permissions for public keys.
+```
+chmod 700 .ssh
+chmod 644 .ssh/authorized_keys
+```
 
 
 

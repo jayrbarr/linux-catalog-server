@@ -59,7 +59,7 @@ sudo ufw delete 6 (delete the rule that allows 22 (v6) / y at prompt)
 - Once downloaded, I saved in convenient location for terminal/bash use, and renamed file to just "lightsail".
 - From terminal (AWS "Connect using SSH" button will no longer work):
 ```
-ssh ubuntu@YOUR_PUBLIC_STATIC_IP -p 2200 =i path/to/private/key/lightsail (yes to prompt about connecting/fingerprint)
+ssh ubuntu@52.15.59.173 -p 2200 =i path/to/private/key/lightsail (yes to prompt about connecting/fingerprint)
 ```
 - Once connected, update timezone:
 ```

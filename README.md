@@ -118,3 +118,7 @@ Add this line right before *</VirtualHpst>* tag:
 ```
 WSGIScriptAlias / /var/www/html/myapp.wsgi
 ```
+Save and exit editor, and restart Apache.
+```
+sudo apache2ctl restart
+```

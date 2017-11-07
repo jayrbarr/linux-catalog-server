@@ -105,11 +105,16 @@ Change folder and file permissions for public keys.
 chmod 700 .ssh
 chmod 644 .ssh/authorized_keys
 ```
-
-
-
-# Dokku Installation Script (on server instance creation at Amazon Lightsail)
+Install Apache.
 ```
-wget https://raw.githubusercontent.com/dokku/dokku/v0.10.5/bootstrap.sh;
-sudo DOKKU_TAG=v0.10.5 bash bootstrap.sh
+sudo apt-get install apache2
+```
+Install mod-wsgi and change Apache config file.
+```
+sudo apt-get install libapache2-mod-wsgi
+sudo nano /etc/apache2/sites-enabled/000-default.conf
+```
+Add this line right before *</VirtualHpst>* tag:
+```
+WSGIScriptAlias / /var/www/html/myapp.wsgi
 ```
